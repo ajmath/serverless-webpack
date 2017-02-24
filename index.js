@@ -114,7 +114,7 @@ class ServerlessWebpack {
 
       'webpack:watch:watch': () => BbPromise.bind(this)
         .then(this.validate)
-        .then(this.wpwatch),
+        .then(this.watch),
 
       'webpack:serve:serve': () => BbPromise.bind(this)
         .then(this.validate)
